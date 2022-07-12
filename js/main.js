@@ -26,10 +26,10 @@ let addGlass = (id) => {
     let avata = "";
     let showInfoGlass = "";
     for (const key in dataGlasses) {
-        let { src, name, brand, color, price, description } = dataGlasses[key];
+        let { virtualImg, name, brand, color, price, description } = dataGlasses[key];
         if (dataGlasses[key].id == id) {
             avata = `
-                <img src="${src}" alt="">
+                <img src="${virtualImg}" alt="">
             `;
             showInfoGlass = `
                 <h2 style = "font-size: 20px ;" >
